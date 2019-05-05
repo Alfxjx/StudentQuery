@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>新生查询页面</title>
-	<meta charset="utf-8">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="./style/reset.css">
-	<link rel="stylesheet" type="text/css" href="./style/style.css">
-</head>
-<body>
-<div id="root" onclick="close()">
-	<div class="page-header">
-		<img class="school-logo" src="./static/logo.jpg"/>
-		<h2 class="desc">本科生录取查询入口</h2>
-	</div>
-	<div class="container">
-		<div class="query">
-			<div class="province-input-block province" id="show">
-				<div class="province-choose">
-					<p class="province-hint">
-						<span>省份</span>
-					</p>
-				</div>
-                <input  id="prov" class="input-s" type="text" name="province" placeholder="选择你的省份">
-                <img  class="more" src="./static/tri.png">
-                <div id="dropdown">
-                    <ul class="dropdown-list">
-                        <li>北京</li>
-                        <li>天津</li>
-                        <li>江苏</li>
-                        <li>北京</li>
-                        <li>天津</li>
-                        <li>江苏</li>
-                        <li>北京</li>
-                        <li>天津</li>
-                        <li>江苏</li>
-                        <li>北京</li>
-                        <li>天津</li>
-                        <li>江苏</li>
-                    </ul>
-                </div>
+	<head>
+		<title>新生查询页面</title>
+		<meta charset="utf-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./style/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./style/style.css" />
+	</head>
+	<body>
+		<div id="root" onclick="close()">
+			<div class="page-header">
+				<img class="school-logo" src="./static/logo.jpg" />
+				<h2 class="desc">本科生录取查询入口</h2>
 			</div>
-			<div class="number-block">
-				<p class="number-hint">
-					<span>考生号</span>
-				</p>
-				<input id="Qnum" class="input-s" type="text" name="number" placeholder="输入准考证号">
+			<div class="container">
+				<div class="query">
+					<div class="province-input-block province" id="show">
+						<div class="hint">
+							<span>省份</span>
+						</div>
+						<input id="prov" class="input-s" type="text" name="province" placeholder="选择你的省份" />
+						<img class="more" src="./static/tri.png" />
+						<div id="dropdown">
+							<ul class="dropdown-list">
+								<li>北京</li>
+								<li>天津</li>
+								<li>江苏</li>
+								<li>北京</li>
+								<li>天津</li>
+								<li>江苏</li>
+								<li>北京</li>
+								<li>天津</li>
+								<li>江苏</li>
+								<li>北京</li>
+								<li>天津</li>
+								<li>江苏</li>
+							</ul>
+						</div>
+					</div>
+					<div class="number-block">
+						<div class="hint">
+             <span>考生号</span>
+            </div>
+						<input id="Qnum" class="input-s" type="text" name="number" placeholder="输入准考证号" />
+					</div>
+				</div>
+			</div>
+			<div class="btn" onclick="query()" id="btn-ani">
+				查询
 			</div>
 		</div>
-	</div>
-	<div class="btn" onclick="query()" id="btn-ani">
-		查询
-	</div>
-</div>
-<script type="text/javascript" src="./js/main.js"></script>
-</body>
+		<script type="text/javascript" src="./js/main.js"></script>
+	</body>
 </html>
