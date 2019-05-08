@@ -29,11 +29,11 @@ function query() {
 	let province = document.getElementById('prov');
 	let number = document.getElementById('Qnum');
 	let btn = document.getElementById('btn-ani');
-	btn.style.animation = 'input-shadow 0.5s linear';
+	btn.style.animation = 'input-shadow 0.2s linear';
 	btn.style.boxShadow = `0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2)`;
 	setTimeout(() => {
 		btn.style.animation = `none`;
-	}, 500);
+	}, 200);
 	// alert(`${province.value}+${number.value}`);
 	console.log(province.value);
 	// console.log(number.value);
@@ -41,8 +41,13 @@ function query() {
 	// btnStyle.backgroundColor = 'red';
 }
 
+// show query result
 $(document).ready(function() {
 	$('#btn-ani').click(function() {
 		$('.result').slideToggle('normal');
-	});
+  });
+  // clear the input
+  $('.cancel-btn').click(function(){
+    $('#Qnum').val('');
+  });
 });
