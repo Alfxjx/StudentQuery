@@ -1,7 +1,7 @@
 const d = document.getElementById('dropdown');
 const input = document.getElementById('prov');
 const button = document.querySelector('#show');
-// 飞入效果
+// 显示下拉菜单
 button.addEventListener('click', event => {
 	event.stopPropagation();
 	if (d.style.display === 'block') {
@@ -10,6 +10,7 @@ button.addEventListener('click', event => {
 		d.style.display = 'block';
 	}
 });
+// 点击页面其他位置收起下拉菜单
 const root = document.querySelector('#root');
 root.addEventListener('click', event => {
 	// console.log('close');
@@ -18,6 +19,7 @@ root.addEventListener('click', event => {
 	}
 });
 
+// 选择对应的城市
 const items = document.querySelectorAll('li');
 for (let i = 0; i < items.length; i++) {
 	items[i].addEventListener('click', event => {
@@ -41,8 +43,9 @@ function query() {
 	// btnStyle.backgroundColor = 'red';
 }
 
-// show query result
+// JQuery in here
 $(document).ready(function() {
+  // show query result
 	$('#btn-ani').click(function() {
 		$('.result').slideToggle('normal');
   });
