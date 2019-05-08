@@ -43,7 +43,7 @@ body {
 	vertical-align: center;
 	color: #22658c;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 	.school-logo {
 		width: 3rem;
 		height: 3rem;
@@ -56,7 +56,7 @@ body {
 	}
 	.province-choose {
 		padding: 2px;
-	}
+  }
 }
 .query {
 	display: flex;
@@ -119,7 +119,8 @@ body {
 	display: none;
 	position: absolute;
 	top: 2rem;
-	right: 0rem;
+  right: 0rem;
+  z-index: 10;
 }
 .dropdown-list {
 	background-color: #f3f5f7;
@@ -171,5 +172,35 @@ body {
 
 .result {
 	display: none;
-	padding: 2em;
+  padding: 1em;
+  width: 90%;
+  max-width: 600px;
+  min-width: 450px;
+}
+
+.res-title{
+  text-align: center;
+  margin: 0.2em auto;
+  font-size: 1.2em;
+  color: #22658c;
+}
+
+.res-table{
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ebedf0;
+}
+
+.res-table-row{}
+
+.odd-row{
+  background: #e8e8e8;
+}
+
+.even-row{
+  background: #fff;
+}
+
+.res-table-row td{
+  padding: 1em;
 }
